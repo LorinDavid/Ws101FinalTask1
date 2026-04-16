@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylesheet3</title>
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(188, 144, 175);
+            color: #f2f2f2;
+
+        }
+
+        #heading {
+            color: white;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            background: url(/header2.jpg);
+        }
+
+        .container {
+            display: flex;
+            flex: 1; 
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #menu { flex: 1; }
+        #middle { flex: 4; }
+        #side {
+            flex: .8;
+            background: url(/header2.jpg);
+            color: white;
+            padding: 15px;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu li:hover{
+            background-color: #6d4d6b;
+            color: #f2f2f2;
+    
+        }
+        #menu a.s3 li {
+            background-color: #6d4d6b;
+            color: #ffffff;
+        }
+        #menu li {
+            margin-bottom: 5px;
+            padding: 10px;
+            border: 1px solid #000000;
+            color: #f2f2f2;
+        }
+
+        #menu a { text-decoration: none; color: black; }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+        #menu { flex: 1; } 
+        #middle { flex: 3; }
+
+        #side {
+            flex: 100%;     
+            margin-top: 20px;
+        }
+    }
+
+        @media(max-width:600px){
+            .container{
+                flex-direction: column;
+        
+            }
+            #menu, #middle{
+                width: 100%;
+            }
+        }
+
+        footer {
+            background-color: #816279;
+            border: 1px solid #000000;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="heading">
+        <h1>WELCOME TO MY HOMEPAGE</h1>
+        <p>Use the menu to select different stylesheets</p>
+    </div>
+
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <a href="index.html" class="s1"><li>Stylesheet-1</li></a>
+                <a href="stylesheet2.html" class="s2"><li>Stylesheet-2</li></a>
+                <a href=""class="s3"><li>Stylesheet-3</li></a>
+                <a href="stylesheet4.html"><li>Stylesheet-4</li></a>
+                <a href="nostyle.html.html"><li>No-Stylesheet</li></a>
+            </ul>
+        </div>
+        
+        <div id="middle">
+            <h2>Same page different Stylesheets</h2>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: Stylesheetl, Stylesheet2, Stylesheet3, Stylesheet4.</p>
+            <h3>No Styles</h3>
+            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: No Stylesheet.</p>
+        </div>
+
+        <div id="side">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nam quis eius sit tenetur itaque delectus numquam commodi aspernatur.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nostrum suscipit debitis repellendus obcaecati cupiditate deserunt eius.</p>
+    </footer>
+
+</body>
+</html>
