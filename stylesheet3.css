@@ -30,7 +30,7 @@
         #middle { flex: 4; }
         #side {
             flex: .8;
-            background: url(/header2.jpg);
+            background: url(header2.jpg);
             color: white;
             padding: 15px;
         }
